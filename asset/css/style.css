@@ -1,0 +1,191 @@
+/* POLICE TELECHARGER SUR DAFONT */
+
+@font-face {
+  font-family: "Disconnected-Regular";
+  src: url(/asset/font/Disconnected-Regular.otf);
+}
+@font-face {
+  font-family: "Italiana-Regular";
+  src: url(/asset/font/Italiana-Regular.ttf);
+}
+
+/* CSS DE LA PAGE ENTIERE */
+
+body {
+  background-image: url(../img/background2.png);
+  background-size: cover;
+  height: 100px;
+  color: white;
+}
+
+/* CSS DU HAUT DE LA PAGE */
+
+h1 {
+  color: white;
+  font-family: Italiana-Regular;
+  text-align: center;
+  font-weight: 100;
+  font-size: 80px;
+  text-shadow: 0 0 5px #b5752f, 0 0 10px #b5752f, 0 0 15px #000000,
+    0 0 20px #b5752f, 0 0 25px #fff, 0 0 30px #d6e7e8, 0 0 35px #fefefe;
+}
+
+/* CORPS DE LA PAGE */
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+/* REGLES DU JEUX */
+
+.regles {
+  color: white;
+  font-family: Italiana-Regular;
+  text-align: center;
+  font-size: 25px;
+  transform: scale(1);
+}
+
+.animate {
+  display: block;
+  margin-left: 10px;
+  animation: slideInRight 6s;
+  text-shadow: 0 0 5px #902110, 0 0 10px #902110, 0 0 15px #ffffff,
+    0 0 20px #902110, 0 0 25px #902110, 0 0 30px #902110, 0 0 35px #ffffff;
+}
+
+.sentence-container {
+  justify-content: center;
+  display: flex;
+}
+
+/* CSS DU CHOIX DU JOUEUR AVEC IMAGE CORRESPONDANT*/
+
+.pvplion {
+  color: white;
+  text-align: center;
+  font-family: Italiana-Regular;
+}
+
+.pattelion {
+  width: 25px;
+  height: 25px;
+    
+}
+
+.pattelion:hover{
+  -webkit-box-shadow: 5px 5px 30px 5px #b5752f;
+    
+}
+
+.pvor {
+  text-align: center;
+  color: white;
+  margin-right: 50px;
+  margin-left: 50px;
+  font-family: Italiana-Regular;
+  text-shadow: 0 0 5px #523210, 0 0 10px #523210, 0 0 15px #523210,
+    0 0 20px #523210, 0 0 25px #523210, 0 0 30px #523210, 0 0 35px #523210;
+}
+
+.pcvtigre {
+  color: white;
+  text-align: center;
+  font-family: Italiana-Regular;
+}
+
+.pattetigre {
+  width: 25px;
+  height: 25px;
+  
+}
+
+.pattetigre:hover{
+  -webkit-box-shadow: 5px 5px 30px 5px #b5752f;
+    
+}
+
+/* DECLARER A QUI LE TOUR */
+
+h3 {
+  text-align: center;
+  font-family: Italiana-Regular;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+/* CELLULES MORPION */
+
+.cell {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.board {
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Disconnected-Regular;
+}
+
+/* CSS PLAY AGAIN */
+
+.white {
+  color: white;
+}
+
+#gameEnd {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(/asset/img/backgroundfinal2.png);
+  background-size: cover;
+  
+}
+
+
+#gameEnd p,
+#gameEnd input {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  transform: translate(-45%, -45%);
+  text-align: center;
+  height: 30px;
+  
+}
+
+#gameEnd p {
+  margin-top: 60px;
+  font-family: Italiana-Regular;
+  font-size: 35px;
+
+}
+
+#reloadGame {
+font-family: Disconnected-Regular;
+font-size: 20px;
+
+}
+
+#reloadGame:hover {
+  -webkit-box-shadow: 5px 5px 30px 5px #BD8D2B;
+}
